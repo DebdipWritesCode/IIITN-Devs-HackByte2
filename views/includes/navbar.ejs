@@ -1,0 +1,36 @@
+<div class="backdrop"></div>
+<header class="main-header">
+    <nav class="main-header__nav">
+        <div class="left-nav">
+            <img src="images/logo.jpeg" alt="">
+        </div>
+        <div class="right-nav">
+            <ul class="nav-list">
+                <li class="main-header__item">
+                    <a class="<%= path === '/' ? 'active' : '' %>" href="/">Home</a>
+                </li>
+                <li class="main-header__item">
+                    <a class="<%= path === '/stories' ? 'active' : '' %>" href="/stories">Stories</a>
+                </li>
+                <li class="main-header__item">
+                    <a class="<%= path === '/books' ? 'active' : '' %>" href="/start-a-story">Books</a>
+                </li>
+                <li class="main-header__item">
+                    <a class="<%= path === '/categories' ? 'active' : '' %>" href="/categories">Categories</a>
+                </li>
+                <li class="main-header__item">
+                    <a class="<%= path === '/about' ? 'active' : '' %>" href="/about">About</a>
+                </li>
+                <% if(!isAuthenticated) { %>
+                    <li class="main-header__item">
+                        <a class="<%= path === '/login' ? 'active' : '' %>" href="/login"><button class="login-btn">Login</button></a>
+                    </li>
+                <% } else { %>
+                    <li class="main-header__item">
+                        <a class="<%= path === '/profile' ? 'active' : '' %>" href="/profile"><button class="login-btn">My Profile</button></a>
+                    </li>
+                <% } %>
+            </ul>
+        </div>
+    </nav>
+</header>
