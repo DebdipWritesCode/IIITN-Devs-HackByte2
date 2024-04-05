@@ -1,0 +1,316 @@
+<%- include('./includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column  ;
+            height: 100vh;
+            margin: 0;
+            background-color: #000;
+        }
+
+        .block-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            width: 100%;
+        }
+
+        /* #3bffb0 */
+        .block {
+            width: 310px;
+            height: 150px;
+            background-color: #e4921a;
+
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 18px;
+            margin: 0 80px;
+            transition: all 0.5s ease;
+            cursor: pointer;
+        }
+
+        .block:hover {
+            transform: scale(1.29);
+            border: 7px solid #23be08;
+            box-shadow: none;
+        }
+
+        .second {
+            width: 310px;
+            height: 150px;
+            background-color: #95d5c4;
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 18px;
+            margin: 0 80px;
+            transition: all 0.5s ease;
+            cursor: pointer;
+        }
+
+        .second:hover {
+            transform: scale(1.29);
+            border: 7px solid #23be08;
+            box-shadow: none;
+        }
+
+        .third {
+            width: 310px;
+            height: 150px;
+            background-color: #2d46bc;
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 18px;
+            margin: 0 80px;
+            transition: all 0.5s ease;
+            cursor: pointer;
+        }
+
+        .third:hover {
+            transform: scale(1.29);
+            border: 7px solid #23be08;
+            box-shadow: none;
+        }
+
+        .fourth {
+            width: 310px;
+            height: 150px;
+            background-color: #49907e;
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 18px;
+            margin: 0 80px;
+            transition: all 0.5s ease;
+            cursor: pointer;
+        }
+
+        .fourth:hover {
+            transform: scale(1.29);
+            border: 7px solid #23be08;
+            box-shadow: none;
+        }
+
+        .fifth {
+            width: 310px;
+            height: 150px;
+            background-color: #93b3c2;
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 18px;
+            margin: 0 80px;
+            transition: all 0.5s ease;
+            cursor: pointer;
+        }
+
+        .fifth:hover {
+            transform: scale(1.29);
+            border: 7px solid #23be08;
+            box-shadow: none;
+        }
+
+        .sixth {
+            width: 310px;
+            height: 150px;
+            background-color: #ee709d;
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 18px;
+            margin: 0 80px;
+            transition: all 0.5s ease;
+            cursor: pointer;
+        }
+
+        .sixth:hover {
+            transform: scale(1.29);
+            border: 7px solid #23be08;
+            box-shadow: none;
+        }
+
+        .seventh {
+            width: 310px;
+            height: 150px;
+            background-color: #ae97c3;
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 18px;
+            margin: 0 80px;
+            transition: all 0.5s ease;
+            cursor: pointer;
+        }
+
+        .seventh:hover {
+            transform: scale(1.29);
+            border: 7px solid #23be08;
+            box-shadow: none;
+        }
+
+        .eight {
+            width: 310px;
+            height: 150px;
+            background-color: #fd6234;
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 18px;
+            margin: 0 80px;
+            transition: all 0.5s ease;
+            cursor: pointer;
+        }
+
+        .eight:hover {
+            transform: scale(1.29);
+            border: 7px solid #23be08;
+            box-shadow: none;
+        }
+
+        .ninth {
+            width: 310px;
+            height: 150px;
+            background-color: #c0e45e;
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 18px;
+            margin: 0 80px;
+            transition: all 0.5s ease;
+            cursor: pointer;
+        }
+
+        .ninth:hover {
+            transform: scale(1.29);
+            border: 7px solid #23be08;
+            box-shadow: none;
+        }
+
+        .text {
+            font-family: "Teko", sans-serif;
+            font-size: 2.3rem;
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+    </head>
+    </head>
+
+
+    <body>
+        <%- include('./includes/navbar.ejs') %>
+
+
+
+            <div class="block-container">
+                <div class="row">
+                    <div class="block">
+                        <p class="text" style="margin-left: 15px;">Mystery Mayhem</p>
+                        <img src="images/Categories-images/7284720.png" height="70px" width="80px"
+                            style="margin-left: 40px; margin-right: 20px;">
+                    </div>
+                    <div class="second">
+                        <p class="text" style="margin: 10px;">Sci-Fi Sagas
+                        </p>
+                        <img src="images/Categories-images/5517882.png" height="70px" width="80px"
+                            style="margin-left: 40px; margin-right: 20px;">
+                    </div>
+                    <div class="third">
+                        <p class="text" style="margin-left: 15px;">Historical Adventures</p>
+                        <img src="images/Categories-images/7588506.png" height="70px" width="80px"
+                            style="margin-left: 40px; margin-right: 20px;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="fourth">
+                        <p class="text" style="margin-left: 15px;">Supernatural Encounters
+                        </p>
+                        <img src="images/Categories-images/5641357.png" height="70px" width="80px"
+                            style="margin-left: 40px; margin-right: 20px;">
+                    </div>
+                    <div class="fifth">
+
+                        <p class="text" style="margin: 10px;">Fantasy Realms
+                        </p>
+                        <img src="images/Categories-images/10427010.png" height="70px" width="80px"
+                            style="margin-left: 40px; margin-right: 20px; margin-right: 20px;">
+                    </div>
+                    <div class="sixth">
+                        <p class="text" style="margin: 15px;">Romantic Escapades
+                        </p>
+                        <img src="images/Categories-images/love_care_hands_volunteering_heart-512.jpg" height="70px" width="80px"
+                            style="margin-left: 40px;margin-right: 20px; ">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="seventh">
+                        <p class="text" style="margin-left:15px ;">Horror Haunts</p>
+                        <img src="images/Categories-images/1167880.png" height="70px" width="80px"
+                            style="margin-left: 40px;margin-right: 20px; ">
+                    </div>
+                    <div class="eight">
+                        <p class="text" style="margin-left:15px ;">Adventure Quests</p>
+                        <img src="images/Categories-images/4711170.png" height="70px" width="80px"
+                            style="margin-left: 40px; margin-right: 20px;">
+                    </div>
+                    <div class="ninth">
+                        <p class="text" style="margin-left:15px ;">Experimental Narratives</p>
+                        <img src="images/Categories-images/experimental-result-laboratory-test-journal-science-chemistry-256 (1).jpg"
+                            height="70px" width="80px" style="margin-left: 40px;margin-right: 20px; ">
+                    </div>
+                </div>
+            </div>
+
+
+    </body>

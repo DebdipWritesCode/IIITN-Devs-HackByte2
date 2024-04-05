@@ -12,3 +12,11 @@ exports.getProfile = (req, res, next) => {
         title: 'Profile page'
     });
 };
+
+exports.getCategories = (req, res, next) => {
+    res.render('categories', {
+        path: '/categories',
+        pageTitle: 'Categories',
+        isAuthenticated: req.oidc.isAuthenticated()
+    });
+};
