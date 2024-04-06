@@ -1,13 +1,141 @@
 <%- include('./includes/head.ejs') %>
     <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="/css/add-product.css">
+    <style>
+        body {
+          background-color: black;
+          margin: 0;
+          padding: 0;
+          font-family: Arial, sans-serif;
+        }
+        #container {
+          display: flex;
+          flex-direction: row;
+           height: 580px;
+           padding: 100px;
+           margin-left: 250px;
+        }
+        #image-div {
+          width: 25%;
+          padding: 2px;
+          background-color: rgb(174, 213, 213);
+          
+        }
+        #form-div {
+          width: 50%;
+          padding: 10px;
+          background-color: rgb(174, 213, 213);
+          border: 6px solid #ddd;
+        }
+        img {
+          max-width: 100%;
+          height: 560px;
+          display: block;
+        }
+        form {
+          margin-top: 20px;
+          padding-left: 50px;
+        }
+
+        .left-nav img {
+            width: 190px;
+            height: 80px;
+        }
+      
+      </style>      
 </head>
 
 
 <body>
     <%- include('./includes/navbar.ejs') %>
 
-    <form action="/add-story" method="POST">
+    <div id="container">
+        <div id="image-div">
+          <img src="images/addStory-images/Mystery.jpeg" alt="Your Image" style="padding-left: 9px; padding-top: 5px; padding-right: 5px; ">
+        </div>
+        <div id="form-div">
+          <form action="/add-story" method="post">
+              <div class="form-element">
+                  <label for="title" style="font-size:20px ; font-weight: 200;">Write Title of story</label><br><br>
+                  <input type="text" id="title" name="title" required style="width: 450px; height: 40px; border-radius: 10px;border: solid rgb(213, 253, 253) ; "><br></div>
+                  
+                  <div class="form-element" style="margin-top: 15px;">
+                  <label for="option"  style="font-size:20px ; font-weight: 200;">Category</label><br><br>
+                  <select id="option" name="option"style="width: 450px; height: 40px; border-radius: 10px;border: solid rgb(226, 252, 252) ;background-color: #fbf8f8; ">
+                    <option value="Mystery Mayhem">Mystery Mayhem</option>
+                    <option value="Sci-fi Sagas">Sci-fi Sagas</option>
+                    <option value="Historical Adventures">Historical Adventures</option>
+                    <option value="Supernatural Encounters">Supernatural Encounters</option>
+                    <option value="Fantasy Realms">Fantasy Realms</option>
+                    <option value="Romantic Escapades">Romantic Escapades</option>
+                    <option value="Horror Haunts">Horror Haunts</option>
+                    <option value="Adventure Quests">Adventure Quests</option>
+                    <option value="Experimental Narratives">Experimental Narratives</option>
+                  </select>
+                  
+                  </div>
+      
+                  <div class="form-element" style="margin-top: 15px;">
+                      <label for="message"  style="font-size:20px ; font-weight: 200;">Background of story</label><br><br>
+                      <textarea name="message" id="message" style="width: 450px; height: 140px;  border-radius: 10px;border: solid rgb(226, 252, 252) ;background-color: #fbf8f8; "  ></textarea>
+                      </div>                             
+      
+      <button type="submit" style="font-size:20px ; font-weight: 200; margin-top: 25px; border:  solid rgb(226, 252, 252) ; background-color: #fbf8f8; border-radius: 10px;">Submit</button>
+                  
+      
+          </form>
+        </div>
+      </div>
+      
+      <script>
+        
+        document.addEventListener("DOMContentLoaded", function() {
+          const selectElement = document.querySelector("#option");
+          const imageElement = document.querySelector("#image-div img");
+      
+         
+          const categoryImages = {
+            "Mystery Mayhem": "images/addStory-images/Mystery.jpeg",
+            "Sci-fi Sagas": "images/addStory-images/SciFi.jpeg",
+            "Historical Adventures": "images/addStory-images/Historical.jpeg",
+            "Supernatural Encounters": "images/addStory-images/Supernatural.jpeg",
+            "Fantasy Realms": "images/addStory-images/Fantasy.jpeg",
+            "Romantic Escapades": "images/addStory-images/Romantic.jpeg",
+            "Horror Haunts": "images/addStory-images/Horror.jpeg",
+            "Adventure Quests": "images/addStory-images/Adventure.jpeg",
+            "Experimental Narratives": "images/addStory-images/Exp.jpeg"    
+          };
+      
+        
+          function changeImage() {
+            const selectedCategory = selectElement.value;
+            const imagePath = categoryImages[selectedCategory];
+            if (imagePath) {
+              imageElement.src = imagePath;
+            } else {
+             
+              imageElement.src = "default-image.jpg";
+            }
+          }
+      
+        
+          changeImage();
+      
+          selectElement.addEventListener("change", changeImage);
+        });
+      
+      
+      
+      
+      
+      </script>
+      
+      
+      
+      </body>
+      </html>      
+
+    <!-- <form action="/add-story" method="POST">
         <div>
             <label for="title">Title:</label><br>
             <input type="text" id="title" name="title" required><br><br>
@@ -18,7 +146,7 @@
                 <option value="Mystery Mayhem">Mystery Mayhem</option>
                 <option value="Sci-fi Sagas">Sci-fi Sagas</option>
                 <option value="Historical Adventures">Historical Adventures</option>
-                <option value="option4">Supernatural Encounters</option>
+                <option value="Supernatural Encounters">Supernatural Encounters</option>
                 <option value="Fantasy Realms">Fantasy Realms</option>
                 <option value="Romantic Escapades">Romantic Escapades</option>
                 <option value="Horror Haunts">Horror Haunts</option>
@@ -31,5 +159,4 @@
             <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
         </div>
         <button type="submit">Submit</button>
-    </form>
-</body>
+    </form> -->

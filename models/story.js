@@ -21,7 +21,9 @@ const storySchema = new Schema({
         {
             userID: {type: Schema.Types.ObjectId, required: true},
             storypartNumber: {type: Number, required: true},
-            story: {type: String, required:true}
+            story: {type: String, required:true},
+            likes: {type: Number, required: true},
+            dislikes: {type: Number, required: true}
         }
     ]
 });
