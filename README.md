@@ -28,6 +28,14 @@ To get started with ShadowScript, follow these steps:
 
 Now you're ready to explore the stories shared by our anonymous community and contribute your own!
 
+## Technologies Used
+
+1. HTML, CSS
+2. Node.js, Express.js
+3. MongoDB Atlas, Mongoose
+4. Auth0
+5. Git/GitHub
+
 ## Screenshots
 
 Here are some screenshots of our website:
