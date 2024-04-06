@@ -40,14 +40,25 @@ Now you're ready to explore the stories shared by our anonymous community and co
 
 Here are some screenshots of our website:
 
+### Home Page
 ![Screenshot 1](./public/images/readme-images/first.png)
 ![Screenshot 2](./public/images/readme-images/second.png)
 ![Screenshot 3](./public/images/readme-images/third.png)
+
+### Categories
 ![Screenshot 4](./public/images/readme-images/categories.png)
+
+### Add your story
 ![Screenshot 5](./public/images/readme-images/add-story.jpeg)
-![Screenshot 6](./public/images/readme-images/Screenshot(20).png)
+
+### Stories
+![Screenshot 6](./public/images/readme-images/Screenshot(18).png)
+
+### Collaborate your ideas annnymously to other stories
 ![Screenshot 7](./public/images/readme-images/Screenshot(19).png)
-![Screenshot 8](./public/images/readme-images/Screenshot(18).png)
+
+### About Us
+![Screenshot 8](./public/images/readme-images/Screenshot(20).png)
 
 ## Contributing
 
