@@ -45,6 +45,9 @@ Here are some screenshots of our website:
 ![Screenshot 3](./public/images/readme-images/third.png)
 ![Screenshot 4](./public/images/readme-images/categories.png)
 ![Screenshot 5](./public/images/readme-images/add-story.jpeg)
+![Screenshot 6](./public/images/readme-images/Screenshot(20).png)
+![Screenshot 7](./public/images/readme-images/Screenshot(19).png)
+![Screenshot 8](./public/images/readme-images/Screenshot(18).png)
 
 ## Contributing
 
