@@ -21,7 +21,7 @@ ShadowScript provides a platform for users to start a story and have other anony
 
 To get started with ShadowScript, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/ShadowScriptRepo/ShadowScript.git](https://github.com/DebdipWritesCode/IIITN-Devs-HackByte2.git)`
+1. Clone the repository: `git clone https://github.com/ShadowScriptRepo/ShadowScript.git`
 2. Navigate to the project directory: `cd HackByte`
 3. Install dependencies: `npm install`
 4. Start the server: `node index.js`
