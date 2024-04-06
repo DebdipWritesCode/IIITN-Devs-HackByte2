@@ -17,7 +17,24 @@ ShadowScript provides a platform for users to start a story and have other anony
 
 ## Getting Started
 
-To get started with ShadowScript, simply visit our website and start exploring the stories shared by our anonymous community. Feel free to contribute your own stories and join in the collaborative storytelling experience.
+To get started with ShadowScript, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/ShadowScriptRepo/ShadowScript.git`
+2. Navigate to the project directory: `cd ShadowScript`
+3. Install dependencies: `npm install`
+4. Start the server: `node index.js`
+
+Now you're ready to explore the stories shared by our anonymous community and contribute your own!
+
+## Screenshots
+
+Here are some screenshots of our website:
+
+1. [Screenshot 1](./public/images/readme-images/first.png)
+2. [Screenshot 2](./public/images/readme-images/second.png)
+3. [Screenshot 3](./public/images/readme-images/third.png)
+4. [Screenshot 4](./public/images/readme-images/categories.png)
+5. [Screenshot 5](./public/images/readme-images/add-story.jpeg)
 
 ## Contributing
 
