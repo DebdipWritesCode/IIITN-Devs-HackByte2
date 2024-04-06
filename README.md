@@ -2,6 +2,8 @@
 
 Welcome to ShadowScript - an anonymous storytelling platform where users can unleash their creativity in the shadows of anonymity.
 
+[Link to PPT Presentation](https://www.canva.com/design/DAGBndS54jE/Hl9OBT9CgnEy2WwwgIA06A/edit?utm_content=DAGBndS54jE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
 ## About
 
 ShadowScript provides a platform for users to start a story and have other anonymous users continue it according to their own perspective. It fosters a community of storytellers who can contribute to collaborative narratives without revealing their identities.
@@ -30,11 +32,11 @@ Now you're ready to explore the stories shared by our anonymous community and co
 
 Here are some screenshots of our website:
 
-1. [Screenshot 1](./public/images/readme-images/first.png)
-2. [Screenshot 2](./public/images/readme-images/second.png)
-3. [Screenshot 3](./public/images/readme-images/third.png)
-4. [Screenshot 4](./public/images/readme-images/categories.png)
-5. [Screenshot 5](./public/images/readme-images/add-story.jpeg)
+![Screenshot 1](./public/images/readme-images/first.png)
+![Screenshot 2](./public/images/readme-images/second.png)
+![Screenshot 3](./public/images/readme-images/third.png)
+![Screenshot 4](./public/images/readme-images/categories.png)
+![Screenshot 5](./public/images/readme-images/add-story.jpeg)
 
 ## Contributing
 
