@@ -51,7 +51,7 @@ Here are some screenshots of our website:
 ### Add your story
 ![Screenshot 5](./public/images/readme-images/add-story.jpeg)
 
-### Stories
+### View Stories
 ![Screenshot 6](./public/images/readme-images/Screenshot(18).png)
 
 ### Collaborate your ideas annnymously to other stories
