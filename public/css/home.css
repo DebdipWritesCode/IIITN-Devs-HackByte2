@@ -102,6 +102,19 @@ nav {
     margin: 30px;
     flex: 0 0 auto;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature img {
+  width: 250px;
+  height: 200px;
+}
+
+.feature h2 {
+  color: #fff;
 }
 
 .feature:hover {

@@ -21,10 +21,33 @@ const storyRoutes = require('./routes/story');
 const { get404Page } = require('./controllers/error');
 const {config} = require('./models/auth');
 
+const User = require('./models/user');
+
 app.use(auth(config));
 app.use((req, res, next) => {
     res.locals.user = req.oidc.user;
-    return next();
+    if(req.oidc.user) {
+        User.findOne({name: req.oidc.user.name})
+        .then(user => {
+            if(user) {
+                req.user = user;
+                return next();
+            }
+            else {
+                const user = new User({name: req.oidc.user.name, stories: {}});
+                user.save()
+                    .then(result => {
+                        req.user = user;
+                        return next();
+                    })
+            }
+        })
+        .catch(err => console.log(err));
+    }
+    else {
+        return next();
+    }
+    
 });
 
 app.use(storyRoutes);
